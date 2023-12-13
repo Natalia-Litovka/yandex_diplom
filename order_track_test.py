@@ -9,7 +9,7 @@ def get_new_order_track():
     # получить ответ по созданному заказу
     response_order = sender_stand_request.post_new_order(order_body)
     # Запомнить трек заказа
-    return response_order.json()
+    return response_order.json()["track"]
 
 
 # получить данные заказа по треку
