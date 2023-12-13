@@ -15,9 +15,9 @@ def get_new_order_track():
 # получить данные заказа по треку
 def get_order_info():
     # сохраним трек заказа
-    track_number = get_new_order_track()
+    track = get_new_order_track()
     # запрос на данные по номеру трека
-    response_order = sender_stand_request.get_order_info(track_number)
+    response_order = sender_stand_request.get_order_info(track)
     # вернуть ответ сервера
     return response_order
 
